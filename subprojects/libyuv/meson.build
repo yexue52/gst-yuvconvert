@@ -61,6 +61,7 @@ libyuv_sources = [
 inc = include_directories('include')
 libyuv = static_library('yuv',
   libyuv_sources,
+  include_directories: inc,
   install: false,
   gnu_symbol_visibility : 'hidden',
 )
